@@ -17,7 +17,7 @@ impl PhysicalVector for ThreeVector {
 
   fn mag2(&self) -> f64
   {
-    self.x * self.x + self.y * self.y + self.z + self.z
+    self.x * self.x + self.y * self.y + self.z * self.z
   }
 
 }
