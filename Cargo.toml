@@ -14,4 +14,4 @@ keywords = [
 ]
 
 [dependencies]
-rand = "0.3"
+# rand = "0.3"
