@@ -1,0 +1,17 @@
+
+[package]
+
+name = "femath"
+version = "0.0.0"
+authors = ["Andrew Kubera <andrew.michael.kubera@cern.ch>"]
+description = """
+A scientific math library
+"""
+keywords = [
+    "science",
+    "physics",
+    "math"
+]
+
+[dependencies]
+rand = "0.3"
