@@ -7,8 +7,6 @@ use femath::vectors::{
   PhysicalVector
 };
 
-use std::num::Float;
-
 #[test]
 fn test_threevector()
 {

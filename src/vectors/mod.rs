@@ -10,8 +10,6 @@ mod lorentzvector;
 pub use self::threevector::ThreeVector;
 pub use self::lorentzvector::LorentzVector;
 
-use std::num::Float;
-
 ///
 /// All "physical" vectors must implement these functions.
 ///
