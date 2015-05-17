@@ -5,8 +5,7 @@
 extern crate femath;
 
 use femath::algorithms::{
-    add_in_quadrature,
-    g_add_in_quad
+    add_in_quadrature
 };
 
 #[test]
@@ -15,9 +14,19 @@ test_add()
 {
     let data = [1, 2, 3];
 
-    let z:i32 = g_add_in_quad(&data);
+    let z:i32 = add_in_quadrature(&data);
     assert_eq!(z, 14);
 
-    let y = g_add_in_quad(&[1., 1., 1.]);
+    let y = add_in_quadrature(&[1., 1., 1.]);
     assert_eq!(y, 3.);
+
+    assert_eq!(add_in_quadrature(&[3., 1., 2.]), 14.);
+
+    assert_eq!(add_in_quadrature(&[0.]), 0.);
+
+    assert_eq!(add_in_quadrature(&[1]), 1);
+
+    assert_eq!(add_in_quadrature(&[2]), 4);
+
+    assert_eq!(add_in_quadrature(&[2, 2]), 8);
 }
