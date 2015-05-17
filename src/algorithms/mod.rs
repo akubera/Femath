@@ -2,8 +2,6 @@
 /// A collection of algorithms
 ///
 
-// extern crate num;
-
 use super::num::Zero;
 
 use std::ops::{
