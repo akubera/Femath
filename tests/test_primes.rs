@@ -1,7 +1,7 @@
 
 extern crate femath;
 
-use femath::primes::{
+use femath::algorithms::primes::{
     is_prime
 };
 
